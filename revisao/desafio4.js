@@ -1,7 +1,14 @@
-const leia = require("prompt-sync")();
+const leia = require("prompt-sync")()
+// solicite ao usuario um numero inteiro
+// faça a raiz quadrada deste numero
+let numero
+numero = parseInt(leia("Digite um numero : "))
 
-let valor1 = parseInt(leia("Coloque o primeiro número: "));
-let valor2 = parseInt(leia("Coloque o segundo número: "));
-let valor3 = valor1 + valor2;
+console.log("Raiz quadrada : "+(Math.sqrt(numero)))
+console.log("Numero ao cubo : "+(Math.pow(numero,3)))
 
-console.log("O resultado da soma dos dois valores é: " + valor3);
+
+
+
+
+

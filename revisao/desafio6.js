@@ -1,10 +1,13 @@
-const leia = require("prompt-sync")();
+const leia = require("prompt-sync")()
 
-let X1 = parseInt(leia("Coloque o primeiro número: "));
-let X2 = parseInt(leia("Coloque o segundo número: "));
-let Y1 = parseInt(leia("Coloque o terceiro número: "));
-let Y2 = parseInt(leia("Coloque o quarto número: "));
+let D 
+let x1 = parseInt(leia("Digita o valor de x1 :"))
+let y1 = parseInt(leia("Digita o valor de y1 :"))
+let x2 = parseInt(leia("Digita o valor de x2 :"))
+let y2 = parseInt(leia("Digita o valor de y2 :"))
 
-let valorD = Math.sqrt(Math.pow(X2 - X1,2) + Math.pow(Y2 - Y1,2));
+D =Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2))
 
-console.log("O resultado da expressão é: " + Math.round(valorD));
+console.log("Resultado "+D)
+
+

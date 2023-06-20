@@ -1,16 +1,13 @@
 const leia = require("prompt-sync")()
 
-let limite = parseInt(leia("Digite um número "))
+let limite = parseInt(leia("Digite um numero de vezes : "))
 
-for (let i = 1; i <= limite; i++) {
-
-    if((i % 2) == 0){
-        console.log(i+" - par")
+for(let x=1; x<=limite; x++){
+    if((x%2)==0){
+        console.log(x+" - par")
     }
-    else{
-        console.log(i+" - impar")
+    else {
+        console.log(x+" - impar")
     }
     
-    
-
 }

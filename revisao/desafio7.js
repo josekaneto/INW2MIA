@@ -1,23 +1,35 @@
-const leia = require("prompt-sync")();
+const leia = require("prompt-sync")()
 
-let genero = leia("Digite o aluno ou a para aluna: ").toUpperCase();
-let nome = leia("Qual é seu nome: ");
-let nota = parseInt(leia("Coloque a sua nota: "));
+let aluno = leia("Digite o nome do aluno : ")
+let nota = parseInt(leia("Digite a nota do aluno [1-10] : "))
+let tipo = leia("Digite o aluno, a aluna ou e alune :")
 
-if(genero == "O"){
-    if(nota<=5){
-        console.log("Oi aluno " + nome + " ainda não passou de ano com a nota " + nota)
+if(tipo == "o"){
+    if(nota <= 5){
+        console.log("Oi aluno "+aluno+" ainda não, recuperação")
     }
-    else{
-        console.log("Oi aluno " + nome + " passou de ano com a nota " + nota)
+    else {
+        console.log("Oi aluno "+aluno+" otimo, continue assim")
     }
 }
-else{
-    if(nota<=5){
-        console.log("Oi aluna " + nome + " ainda não passou de ano com a nota " + nota)
+
+if(tipo == "e"){
+    if(nota <= 5){
+        console.log("Oi alune "+aluno+" ainda não, recuperação")
     }
-    else{
-        console.log("Oi aluna " + nome + " passou de ano com a nota " + nota)
+    else {
+        console.log("Oi alune "+aluno+" otimo, continue assim")
     }
 }
+
+if(tipo == "a"){
+    if(nota <= 5){
+        console.log("Oi aluna "+aluno+" ainda não, recuperação")
+    }
+    else {
+        console.log("Oi aluna "+aluno+" otimo, continue assim")
+    }
+}
+
+
 
